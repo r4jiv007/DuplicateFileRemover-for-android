@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       	android:background="#000000"
+        >
+
+      
+        	<TextView 
+            
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:text="Selected Directory :-"
+            	android:textColor="#FFFFFF"
+           		android:textSize="25dp"
+            	android:background="#000000"
+            />
+        
+		 <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+	<HorizontalScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    
+	    <TextView android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:background="#000000"
+        android:textStyle="bold"
+        android:id="@+id/ftlook"
+    	android:singleLine="true"
+    	android:scrollHorizontally="true"
+       >
+    	</TextView>
+	</HorizontalScrollView>      
+    
+	       
+   	</LinearLayout>
+        	
+			       
+        
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+         style="@android:style/ButtonBar" 
+        >
+
+        <Button
+            android:id="@+id/fileselct"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Select Dir" />
+        		
+        <Button
+            android:id="@+id/process"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Process" />
+    </LinearLayout>
+    
+</LinearLayout>
